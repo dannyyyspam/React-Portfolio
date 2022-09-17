@@ -10,6 +10,10 @@ const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const refForm = useRef();
 
+  const MY_SERVICE_ID = "service_m5pbbdr"
+  const MY_TEMPLATE_ID = "template_hgdpsy9"
+  const MY_PUBLIC_KEY = "kJGVeaNVTWkkmXogI"  
+
   useEffect(() => {
     return setTimeout(() => {
       setLetterClass("text-animate-hover");
@@ -19,13 +23,17 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.send("service_m5pbbdr", "template_hgdpsy9", refForm.current, "kJGVeaNVTWkkmXogI")
-    .then((result) => {
-      console.log(result.text);
-  }, (error) => {
-      console.log(error.text);
-  });
-};
+    emailjs.sendForm(MY_SERVICE_ID, MY_TEMPLATE_ID, refForm.current, MY_PUBLIC_KEY)
+      .then(
+        () => {
+          alert("Message successfully sent!");
+          window.location.reload(false);
+        },
+        () => {
+          alert("Failed to send the message, please try again");
+        }
+      );
+  };
 
   return (
     <>
@@ -41,7 +49,7 @@ const Contact = () => {
           <p>
             I am interested in freelance opportunities - especially ambitious or
             large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            don't hesitate to contact me using form below.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
@@ -84,7 +92,7 @@ const Contact = () => {
           <br />
           20525 Cypresswood Dr, <br />
           Cypress, TX 77433 <br />
-          United States
+          United States <br />
           <span>danielaliabdulkarim@gmail.com</span>
         </div>
         <div className="map-wrap">

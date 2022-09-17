@@ -45,7 +45,7 @@
         rgba(0, 0, 0, 0.2) 0,
         rgba(0, 0, 0, 1)
       );
-        bottom: -70px;
+      bottom: -70px;
     }
 
     .title {
@@ -102,12 +102,30 @@
     }
 
     &:hover:after {
-        opacity: 0.85;
+      opacity: 0.85;
     }
 
     &:hover .content {
-        bottom: 0;
-        background: transparent;
-        }
+      bottom: 0;
+      background: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container .portfolio-page {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    h1.page-title {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    .image-box {
+      height: 200px;
+      max-width: calc(50% - 10px);
+    }
   }
 }
