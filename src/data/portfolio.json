@@ -1,0 +1,16 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/1/BookSmart.png",
+            "title": "BookSmart",
+            "description": "HTML, CSS, JS, jQuery, JSON, Font Awesome",
+            "url": "https://github.com/dannyyyspam/BookSmart"
+        },
+        {
+            "cover": "/portfolio/1/petspace.png",
+            "title": "PetSpace",
+            "description": "Git, JS, Node, npm, MySQL, API",
+            "url": "https://github.com/dannyyyspam/petSpace/tree/danny"
+        }
+    ]
+}

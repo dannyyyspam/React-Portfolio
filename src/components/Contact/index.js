@@ -1,8 +1,10 @@
-import "./index.scss";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Loader from "react-loaders";
-import AnimatedLetters from "../AnimatedLetters";
+import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import AnimatedLetters from "../AnimatedLetters";
+import "./index.scss";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -17,23 +19,13 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "gmail",
-        "template_e7ct9tj",
-        refForm.current,
-        "kJGVeaNVTWkkmXogI"
-      )
-      .then(
-        () => {
-          alert("Message successfully sent!");
-          window.location.reload(false);
-        },
-        () => {
-          alert("Failed to send the message, please try again");
-        }
-      );
-  };
+    emailjs.send("service_m5pbbdr", "template_hgdpsy9", refForm.current, "kJGVeaNVTWkkmXogI")
+    .then((result) => {
+      console.log(result.text);
+  }, (error) => {
+      console.log(error.text);
+  });
+};
 
   return (
     <>
@@ -86,6 +78,22 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+        </div>
+        <div className="info-map">
+          Daniel A,
+          <br />
+          20525 Cypresswood Dr, <br />
+          Cypress, TX 77433 <br />
+          United States
+          <span>danielaliabdulkarim@gmail.com</span>
+        </div>
+        <div className="map-wrap">
+          <MapContainer center={[29.992299, -95.741983]} zoom={13}>
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={[29.992299, -95.741983]}>
+              <Popup>Daniel lives here, come over for a cup of coffee :)</Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
