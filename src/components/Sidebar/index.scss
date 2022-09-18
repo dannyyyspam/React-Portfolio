@@ -82,6 +82,12 @@
       }
     }
 
+    a.skills-link {
+      &:after {
+        content: "SKILLS";
+      }
+    }
+
     a.contact-link {
       &:after {
         content: "CONTACT";
@@ -90,7 +96,7 @@
 
     a.portfolio-link {
       &:after {
-        content: "PORTFOLIO";
+        content: "MY WORK";
       }
     }
 
@@ -132,7 +138,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
   .nav-bar {
     background: transparent;
     position: initial;
