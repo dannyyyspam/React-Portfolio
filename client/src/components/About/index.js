@@ -60,9 +60,10 @@ const About = () => {
             someone who is prepared to go above and beyond what is required to
             ensure my employer always stays one step ahead of its competitors
           </p>
-          
-          <button className="flat-button" onClick={(e) => download(e)}>Download Resume</button>
 
+          <button className="flat-button" onClick={(e) => download(e)}>
+            Download Resume
+          </button>
         </div>
 
         <div className="stage-cube-cont">
