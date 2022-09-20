@@ -1,8 +1,8 @@
 import "./index.scss";
 import LogoD from "../../../assets/images/logo-D.png";
 import { useEffect, useRef } from "react";
-import DrawSVGPlugin from "gsap-trial/DrawSVGPlugin";
-import gsap from "gsap-trial";
+import DrawSVGPlugin from "gsap/DrawSVGPlugin";
+import gsap from "gsap";
 
 const Logo = () => {
   const bgRef = useRef();
@@ -35,7 +35,7 @@ const Logo = () => {
       }
     )
   }, [])
-
+ 
   return (
     <div className="logo-container" ref={bgRef}>
       <img ref={solidLogoRef} className="solid-logo" src={LogoD} alt="D" />
