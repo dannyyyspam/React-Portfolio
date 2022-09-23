@@ -10,12 +10,12 @@ const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const refForm = useRef();
 
-  const MY_SERVICE_ID = "service_m5pbbdr"
-  const MY_TEMPLATE_ID = "template_hgdpsy9"
-  const MY_PUBLIC_KEY = "kJGVeaNVTWkkmXogI"  
+  const MY_SERVICE_ID = "service_m5pbbdr";
+  const MY_TEMPLATE_ID = "template_hgdpsy9";
+  const MY_PUBLIC_KEY = "kJGVeaNVTWkkmXogI";
 
   useEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass("text-animate-hover");
     }, 3000);
   }, []);
@@ -23,7 +23,8 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(MY_SERVICE_ID, MY_TEMPLATE_ID, refForm.current, MY_PUBLIC_KEY)
+    emailjs
+      .sendForm(MY_SERVICE_ID, MY_TEMPLATE_ID, refForm.current, MY_PUBLIC_KEY)
       .then(
         () => {
           alert("Message successfully sent!");
@@ -88,21 +89,23 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Daniel A,
-          <br />
-          20525 Cypresswood Dr, <br />
-          Cypress, TX 77433 <br />
-          United States <br />
-          <span>danielaliabdulkarim@gmail.com</span>
+          <p>Daniel A,</p>
+          
+          <p>20525 Cypresswood Dr,</p> 
+          <p>Cypress, TX 77433 </p>
+          <p>United States</p> 
+          <p><span className="email">danielaliabdulkarim@gmail.com</span></p>
         </div>
-        <div className="map-wrap">
-          <MapContainer center={[29.992299, -95.741983]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[29.992299, -95.741983]}>
-              <Popup>Daniel lives here, come over for a cup of coffee :)</Popup>
-            </Marker>
-          </MapContainer>
-        </div>
+            <div className="map-wrap">
+              <MapContainer center={[29.992299, -95.741983]} zoom={13}>
+                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                <Marker position={[29.992299, -95.741983]}>
+                  <Popup>
+                    Daniel lives here, come over for a cup of coffee :)
+                  </Popup>
+                </Marker>
+              </MapContainer>
+            </div>
       </div>
       <Loader type="pacman" />
     </>

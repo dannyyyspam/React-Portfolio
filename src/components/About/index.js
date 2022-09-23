@@ -29,7 +29,7 @@ const About = () => {
   };
 
   useEffect(() => {
-    return setTimeout(() => {
+     setTimeout(() => {
       setLetterClass("text-animate-hover");
     }, 3000);
   }, []);
