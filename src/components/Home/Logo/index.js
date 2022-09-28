@@ -1,8 +1,8 @@
 import "./index.scss";
 import LogoD from "../../../assets/images/logo-D.png";
 import { useEffect, useRef } from "react";
-import DrawSVGPlugin from "gsap-trial/DrawSVGPlugin";
-import gsap from "gsap-trial";
+import { gsap } from "gsap";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
 const Logo = () => {
   const bgRef = useRef();
@@ -21,7 +21,7 @@ const Logo = () => {
       .from(outLineLogoRef.current, {
         drawSVG: 0,
         duration: 20,
-      })
+      });
 
     gsap.fromTo(
       solidLogoRef.current,
@@ -33,8 +33,8 @@ const Logo = () => {
         delay: 4,
         duration: 4,
       }
-    )
-  }, [])
+    );
+  }, []);
 
   return (
     <div className="logo-container" ref={bgRef}>

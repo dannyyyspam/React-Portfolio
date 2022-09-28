@@ -13,6 +13,7 @@ import {
 import Loader from "react-loaders";
 import Axios from "axios";
 import FileDownload from "js-file-download";
+import doc from '../../assets/Profile.pdf'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -60,10 +61,12 @@ const About = () => {
             someone who is prepared to go above and beyond what is required to
             ensure my employer always stays one step ahead of its competitors
           </p>
-
-          <button className="flat-button" onClick={(e) => download(e)}>
+          <a href={doc} download='doc' target='_blank'>
+            <button className="flat-button" >
             Download Resume
           </button>
+          </a>
+          
         </div>
 
         <div className="stage-cube-cont">

@@ -11,7 +11,11 @@ import {
   faBars,
   faClose,
 } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faStackOverflow,
+} from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
 const Sidebar = () => {
@@ -84,6 +88,15 @@ const Sidebar = () => {
             href="https://github.com/dannyyyspam"
           >
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://stackoverflow.com/users/18923388/daniel-ali"
+          >
+            <FontAwesomeIcon icon={faStackOverflow} color="#4d4d4e" />
           </a>
         </li>
       </ul>
