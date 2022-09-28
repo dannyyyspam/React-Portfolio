@@ -77,9 +77,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .tags,
-  .home-page h1::before,
-  .home-page h1::after {
+  .tags {
     display: none;
   }
 
@@ -102,7 +100,7 @@
 
     .logo-container {
       position: relative;
-      width: 100px;
+      width: 285px;
       height: auto;
       top: 50px;
       right: 0;
@@ -110,7 +108,7 @@
       margin: auto;
       left: 0;
 
-      svg{
+      svg {
         position: absolute;
         top: auto;
         right: auto;
@@ -119,6 +117,5 @@
         margin: auto;
       }
     }
-    
   }
 }
