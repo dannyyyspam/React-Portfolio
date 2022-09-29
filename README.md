@@ -1,16 +1,11 @@
 <h1 align="center">React Challenge: React Portfolio 👋</h1>
 
 ## Table of Contents 🔎
-- [Description](#description)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-
-## Description 
-📝
-
 
 ## User Story 
 👨‍💻
