@@ -44,7 +44,7 @@ export const portfolioData = {
       url: "https://github.com/dannyyyspam/petSpace/tree/danny",
     },
     {
-      cover: MERN ,
+      cover: MERN,
       title: "NowYouKnow 🤷‍♀️",
       description: "React, express, SASS, Node.js, MongoDB, JWT",
       url: "https://github.com/dannyyyspam/nowYouKnow/tree/danny",
