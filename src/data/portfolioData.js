@@ -43,5 +43,11 @@ export const portfolioData = {
       description: "JS, express, sequelize, dotenv MySql",
       url: "https://github.com/dannyyyspam/petSpace/tree/danny",
     },
+    {
+      cover: MERN ,
+      title: "NowYouKnow 🤷‍♀️",
+      description: "React, express, SASS, Node.js, MongoDB, JWT",
+      url: "https://github.com/dannyyyspam/nowYouKnow/tree/danny",
+    },
   ],
 };
