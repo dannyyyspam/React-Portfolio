@@ -4,6 +4,7 @@ import WD from "../assets/images/1/weather-dashboard.png";
 import JATE from "../assets/images/1/jate.png";
 import TB from "../assets/images/1/tb.png";
 import Backend from "../assets/images/1/Backend.png";
+import Backend from "../assets/images/1/NowYouKnow.png";
 
 export const portfolioData = {
   portfolio: [
