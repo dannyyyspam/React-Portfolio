@@ -76,8 +76,8 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .tags {
+@media screen and (max-width: 820px) {
+  .tags, .home-page::before, .home-page::after {
     display: none;
   }
 
@@ -88,7 +88,6 @@
       transform: none;
       padding: 10px;
       box-sizing: border-box;
-      margin-top: 75px;
     }
 
     .flat-button {
@@ -100,7 +99,7 @@
 
     .logo-container {
       position: relative;
-      width: 285px;
+      width: 150px;
       height: auto;
       top: 50px;
       right: 0;

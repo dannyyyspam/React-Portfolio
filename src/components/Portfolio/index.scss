@@ -112,20 +112,29 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container .portfolio-page {
+@media screen and (max-width: 820px) {
+  .portfolio-page {
+    padding-left: 0 !important;
+  }
+  .page-title {
+    margin-left: 10px !important;
+  }
+
+  .images-container {
+    display: flex !important;
+    flex-direction: column;
+    height:400vh;
+    flex-wrap: nowrap !important;
+  }
+  .images-container .image-box {
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-
-    h1.page-title {
-      margin-left: 20px;
-      margin-top: 20px;
-    }
-
-    .image-box {
-      height: 200px;
-      max-width: calc(50% - 10px);
-    }
+  }
+  .portfolio-page .image-box {
+    position: relative;
+    flex: 1 1 20%;
+    height: 400px !important;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 100%;
   }
 }

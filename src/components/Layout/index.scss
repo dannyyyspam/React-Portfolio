@@ -113,8 +113,16 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 820px) {
   .page {
+    position: initial;
+  }
+
+.home-page h1::before, .home-page h1::after {
+    display: none;
+  }
+
+  .container {
     position: initial;
     height: auto;
     min-height: auto;
