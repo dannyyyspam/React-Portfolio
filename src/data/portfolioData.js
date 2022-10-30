@@ -1,3 +1,4 @@
+import FBJS from "../assets/images/projects/FBJS.gif";
 import petspace from "../assets/images/projects/petspace.png";
 import WD from "../assets/images/projects/weather-dashboard.png";
 import JATE from "../assets/images/projects/jate.png";
@@ -11,8 +12,15 @@ import WDS from "../assets/images/projects/WDS.gif";
 import CQ from "../assets/images/projects/CQ.png";
 import PG from "../assets/images/projects/PG.png";
 
+
 export const portfolioData = {
   portfolio: [
+    {
+      cover: FBJS,
+      title: "Flappy Bird",
+      description: "HTML and JavaScript",
+      url: "https://github.com/dannyyyspam/Flappy-Bird-JavaScript",
+    },
     {
       cover: petspace,
       title: "🐶 PetSpace 🐱",
