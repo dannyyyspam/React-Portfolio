@@ -1,3 +1,4 @@
+import VGDB from "../assets/images/projects/VGDB.png";
 import FBJS from "../assets/images/projects/FBJS.gif";
 import petspace from "../assets/images/projects/petspace.png";
 import WD from "../assets/images/projects/weather-dashboard.png";
@@ -15,6 +16,12 @@ import PG from "../assets/images/projects/PG.png";
 
 export const portfolioData = {
   portfolio: [
+    {
+      cover: VGDB,
+      title: "Video Games DB 🎮🗄️",
+      description: "Angular, SCSS, RAWG API, RXJS",
+      url: "https://github.com/dannyyyspam/Flappy-Bird-JavaScript",
+    },
     {
       cover: FBJS,
       title: "Flappy Bird",
