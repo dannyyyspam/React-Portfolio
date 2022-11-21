@@ -20,7 +20,7 @@ export const portfolioData = {
       cover: VGDB,
       title: "Video Games DB 🎮🗄️",
       description: "Angular, SCSS, RAWG API, RXJS",
-      url: "https://github.com/dannyyyspam/Flappy-Bird-JavaScript",
+      url: "https://github.com/dannyyyspam/video-game-db",
     },
     {
       cover: FBJS,
