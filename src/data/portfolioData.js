@@ -20,7 +20,7 @@ export const portfolioData = {
     {
       cover: store,
       title: "E-Commerce-Store 🛍️",
-      description: "Angular, Tailwind, FakeStoreApi, Node.js Stripe",
+      description: "Angular, Tailwind, FakeStoreApi, Node.js, Stripe",
       github: "https://github.com/dannyyyspam/E-Commerce-Store",
       live: "https://e-commerce-store-psi.vercel.app",
     },
