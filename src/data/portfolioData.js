@@ -1,4 +1,5 @@
 import VGDB from "../assets/images/projects/VGDB.png";
+import store from "../assets/images/projects/store.png";
 import FBJS from "../assets/images/projects/FBJS.gif";
 import petspace from "../assets/images/projects/petspace.png";
 import WD from "../assets/images/projects/weather-dashboard.png";
@@ -16,6 +17,13 @@ import PG from "../assets/images/projects/PG.png";
 
 export const portfolioData = {
   portfolio: [
+    {
+      cover: store,
+      title: "E-Commerce-Store 🛍️",
+      description: "Angular, Tailwind, FakeStoreApi, Node.js Stripe",
+      github: "https://github.com/dannyyyspam/E-Commerce-Store",
+      live: "https://e-commerce-store-psi.vercel.app",
+    },
     {
       cover: VGDB,
       title: "Video Games DB 🎮🗄️",
