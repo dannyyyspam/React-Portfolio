@@ -89,9 +89,9 @@ const Contact = () => {
           </div>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[29.992299, -95.741983]} zoom={13}>
+          <MapContainer center={[29.749901, -95.366115]} zoom={10}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[29.992299, -95.741983]}>
+            <Marker position={[29.749901, -95.366115]}>
               <Popup>Daniel lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
